@@ -96,9 +96,9 @@ export function flipACoin(call) {
     var flip = coinFlip();
     var result;
     if (flip == call) {
-        result = win;
+        result = "win";
     } else {
-        result = lose;
+        result = "lose";
     }
     return { call: call, flip: flip, result: result }
 }
