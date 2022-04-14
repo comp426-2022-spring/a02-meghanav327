@@ -69,13 +69,13 @@ export function countFlips(array) {
     var headCount = 0;
     var tailsCount = 0;
     var index = 0;
-    while (i < array.length) {
-        if (array[i] == "heads") {
+    while (index < array.length) {
+        if (array[index] == "heads") {
             headCount = headCount + 1;
         } else {
             tailsCount = tailsCount + 1;
         }
-        i++;
+        index++;
 
     }
     return { tails: tailsCount, heads: headCount }
